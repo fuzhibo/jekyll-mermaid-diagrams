@@ -1,4 +1,4 @@
-require_relative 'lib/jekyll/mermaid/diagrams/version'
+require_relative 'lib/jekyll-mermaid-diagrams/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-mermaid-diagrams"
