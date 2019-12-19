@@ -6,7 +6,7 @@ module Jekyll
     module Diagrams
       class Error < StandardError; end
       # Your code goes here...
-      class MermaidChart < Liquid::Tag
+      class MermaidChart < Liquid::Block
 
         def initialize(tag_name, markup, tokens)
           super
@@ -18,9 +18,9 @@ module Jekyll
           "<script>mermaid.initialize({startOnLoad:true});</script>"\
           "<div class=\"mermaid\">#{super}</div>"
         end
-        Liquid::Template.register_tag('mermaid', self)
       end
     end
   end
 end
+Liquid::Template.register_tag('mermaid', Jekyll::Mermaid::Diagrams::MermaidChart)
 
