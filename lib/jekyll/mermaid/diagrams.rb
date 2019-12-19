@@ -1,5 +1,3 @@
-require "jekyll/mermaid/diagrams/version"
-require "jekyll"
 
 module Jekyll
   module Mermaid
